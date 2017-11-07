@@ -12,8 +12,8 @@ and open the template in the editor.
         </title>
         <script>
 
-            function plons() {
-            document.getElementById("fontijn").src = "plons.jpg";
+            function plons(a) {
+            document.getElementById("fontijn"+a).src = "plons.jpg";
             }
             
             function vuur() {
@@ -24,7 +24,11 @@ and open the template in the editor.
     <body>
         
         <?php
+        for($x=1; $x <=10; $x++){
+            echo "<img onclick=plons(".$x.") id=fontijn".$x." src=golven.png width=25 height=25>";
+
+        }
 
         ?>
-         <img onclick="plons()" id="fontijn" src="golven.png" width="25" height="25">
+        <img onclick="plons($x)" id="fontijn" src="golven.png" width="25" height="25">
          <img onclick="vuur()" id="fakkel" src="golven.png" width="25" height="25">
