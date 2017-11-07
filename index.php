@@ -12,8 +12,12 @@ and open the template in the editor.
         </title>
         <script>
 
-            function myFunction() {
-            document.getElementById("myImg").src = "plons.jpg";
+            function plons() {
+            document.getElementById("fontijn").src = "plons.jpg";
+            }
+            
+            function vuur() {
+            document.getElementById("fakkel").src = "vuur.png";
             }
         </script>
     </head>
@@ -22,4 +26,5 @@ and open the template in the editor.
         <?php
 
         ?>
-        <img onclick="myFunction()" id="myImg" src="golven.png" width="25" height="25">
+         <img onclick="plons()" id="fontijn" src="golven.png" width="25" height="25">
+         <img onclick="vuur()" id="fakkel" src="golven.png" width="25" height="25">
